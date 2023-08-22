@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="row">
+        <div class="sidebar col-2">
+            <h2><img src="https://play-lh.googleusercontent.com/P0QkMWnVe00FSXsSc2OzkHKqGB9JTMm4sur4XRkBBkFEtO7MEQgoxO6s92LHnJcvdgc" alt="" style="width: 40px; height: 40px;">Admin</h2></li>
+            <p><img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000" alt="" style="width: 40px; width: 40px;">User</li></p>
+            <input id="search" class="ms-2" type="text" placeholder="   search">
+            <i class="search ti-search"></i>
+            <button class="ms-2 mt-2"><i class="chart ti-pie-chart">   Quản lí sản phẩm</i>
+                <select name="" id=""></select>
+            </button>
+            <a class="new mt-2 ms-2"><input class="news" type="radio"> Thêm mới</a>
+            <a class="list mt-2"><input class="circle" type="radio"> Danh sách</a>
+            <div class="gap">
+
+            </div>
+        </div>
+
+        <div class="main-content col-10">
+            <div class="nav">
+                <a href=""><i class="menu-icon ti-menu"></i></a>
+                <a href="#">Trang chủ</a>
+                <a href="#">Đăng xuất</a>
+                <a href=""><i class="search-icon ti-search"></i></a>
+            </div>
+            <div class="header">
+                <h2>Thêm mới sản phẩm</h2>
+            </div>
+
+            <div class="row">
+                <div class="right-content col-8">
+                    <div class="card mb-3">
+                        <h4>Thông tin sản phẩm</h4>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label ps-3">Tên sản phẩm (*)</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" style="margin-left: 16px; max-width: 788px;">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label ps-3">Mô tả ngắn (*)</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="margin-left: 16px; max-width: 788px;" ></textarea>
+                      </div>
+                      <p class="paragrap ps-3" style="font-size: 16px; font-weight: 750;">Chi tiết</p>
+                      <div class="icon-list">
+                        <ul class="pb-3">
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <h4>Dữ liệu sản phẩm</h4>
+                        <div class="mb-3 row">
+                            <label for="inputNumber" class="form-label col-sm-2 col-form-label ">Giá bán <br> (VND)</label>
+                            <div class="col-sm-10">
+                              <input type="number" class="form-control" id="inputNumber" style="max-width: 650px;">
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="inputStatus" class="form-label col-sm-2 col-form-label">Trạng thái</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" aria-label="Default select example" style="max-width: 650px;">
+                                    <option value="1">Mới</option>
+                                    <option value="2">Hết hàng</option>
+                                  </select>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="left-content col-4">
+                    <div class="card me-2">
+                        <h4>Thể loại sản phẩm</h4>
+                        <p class="form-label ps-3">Chọn thể loại (*)</p>
+                        <select class="form-select mb-4" aria-label="Default select example" style="max-width: 350px; margin-left: 20px;">
+                            <option value="1">Điện thoại</option>
+                            <option value="2">Máy tính</option>
+                            <option value="3">Laptop</option>
+                          </select>
+                    </div>
+
+                    <div class="card mt-3 me-2">
+                        <h4>Ảnh đại diện</h4>
+                        <p class="ms-3"> Chọn ảnh(*)</p>
+                        <p class="ms-3">định dạng : jpg, png, jpeg, gì, svg, - kích cỡ < 2MB</p>
+                        <div>
+                            <input class="form-control ms-3 mb-4" type="text" value="choose file" aria-label="readonly input example" readonly style="max-width: 200px; background-color: #fff;">
+                            <button class="btn-browse btn btn-outline-secondary mb-4" type="button">Browse</button>
+                            <button class="btn-upload btn btn-outline-secondary mb-4" type="button">Upload</button>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-primary btn-sm mt-3 " style="width: 100px;">Lưu</button>
+                        <button type="button" class="btn btn-secondary btn-sm mt-3 ">Hủy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
